@@ -19,8 +19,6 @@ Route::get('/about', function () {
     return view('pages.about');
 });
 
-Route::get('/login', function () {
-    return view('pages.login');
-});
+Auth::routes();
 
-Route::post('/login', 'LoginController@login');
+Route::get('/home', 'DashboardController@index');
