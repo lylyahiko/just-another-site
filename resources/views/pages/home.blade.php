@@ -6,7 +6,7 @@
             <div class="title m-b-md">
                 Welcome
             </div>
-                <p>My name is <strong>Jonathan Mead</strong>. I am a web developer. This site will have multiple purposes. The first purpose of this site is to act as a sort of portfolio. Nothing says I can do the job better than "Look at my site." The second purpose of this site is to double as a place where people can participate in code golfs.</p><br>
+                <p>My name is <strong>Jonathan Mead</strong>. I am a Web Developer. This site will have multiple purposes. The first purpose of this site is to act as a sort of portfolio. Nothing says I can do the job better than "Look at my site." The second purpose of this site is to double as a place where people can participate in code golfs.</p><br>
                 <p><strong>Code Golf</strong> is an exercise where you are tasked with completing a problem in as few characters as possible. I primarily am a php and javascript developer so those will be the languages we will primarily work with.</p>
                 <br>
                 <p>An example of a code golf would be make 2 + 2 = 5.</p>
