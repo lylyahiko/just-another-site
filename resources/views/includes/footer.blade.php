@@ -1,4 +1,4 @@
-<div id="copyright text-right">© Copyright 2017 Jonathan Mead</div>
+<div style="text-align:center" id="copyright text-right"><small><strong>© Copyright 2017 Jonathan Mead</small></strong></div>
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
