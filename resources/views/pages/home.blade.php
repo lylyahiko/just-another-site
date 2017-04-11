@@ -4,11 +4,15 @@
     <div class="flex-center position-ref">
         <div class="content">
             <div class="title m-b-md">
-                Welcome
+                    Welcome
             </div>
+                <section class="page">
                 <p>My name is <strong>Jonathan Mead</strong>. I am a Web Developer. This site will have multiple purposes. The first purpose of this site is to act as a sort of portfolio. Nothing says I can do the job better than "Look at my site." The second purpose of this site is to double as a place where people can participate in code golfs.</p><br>
+                </section>
+                <section class="page">
                 <p><strong>Code Golf</strong> is an exercise where you are tasked with completing a problem in as few characters as possible. I primarily am a php and javascript developer so those will be the languages we will primarily work with.</p>
-                <br>
+                </section>
+                <section class="page">
                 <p>An example of a code golf would be make 2 + 2 = 5.</p>
 
                 <p>First we want to echo our 2 + 2 = Something. So we start with <strong>echo 2 + 2 =</strong></p>
@@ -23,6 +27,7 @@
                 including the shortened php tags this brings it down to 34 characters. The winner of the code golf would be the one who came up with the shorted <strong>working</strong> answer.</p>
                 <br>
                 <p>Feel free to click the about me to find out more about me, or login/register to get started with code golfs</p>
+                </section>
         </div>
     </div>
     </body>
