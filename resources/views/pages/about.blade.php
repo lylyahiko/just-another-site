@@ -10,7 +10,7 @@
             <section class="page">
             <h4>Work Experience</h4>
             <div class="row">
-                <div class="col-2">
+                <div class="cul-2">
                     <div class="d-flex w-100">
                       <p class="align-left">Alter Imaging</p>
                     </div>
@@ -23,7 +23,7 @@
                     <p class="align-left">Projects of Note: <small><strong><a href="www.tradetreeonline.com">Trade Tree Online</a>
                         <br><a href="isleblue.co">Isle Blue</a></strong></small></p>
                 </div>
-                <div class="col-2">
+                <div class="cul-2">
                     <div class="d-flex w-100">
                       <p class="align-left">Beanstalk Data</p>
                     </div>
@@ -37,7 +37,7 @@
                     <br><a href="www.tacocabana.com">Taco Cabana</a></strong></small>
                     <br><small><strong>Developed a project to integrate a third party service with an internal system. This was done using a php script that broke down data and transmitted it via apis.</strong></small></p></p>
                 </div>
-                 <div class="col-2">
+                 <div class="cul-2">
                     <div class="d-flex w-100">
                       <p class="align-left">Better Car People</p>
                     </div>
@@ -55,7 +55,7 @@
             <section class="page">
             <h4>Product Experience</h4>
             <div class="row">
-                <div class="col-6">
+                <div class="cul-6">
                     <p>Programming Languages: <small><strong>PHP (primary), Javascript (primary), C#/C++ (Mostly used in school), Visual Basic (Moslty used in school), Java (exposure)</strong></small></p>
                     <p>Databases: <small><strong>Mostly MySQL, some SQL</strong></small></p>
                     <p>Operating Systems: <small><strong>Most of my coding has been on a Mac but I'm very familiar with navigating and operating a PC.</strong></small></p>
@@ -65,7 +65,7 @@
             <section class="page">
             <h4>Hobbies</h4>
             <div class="row">
-                <div class="col-6">
+                <div class="cul-6">
                     <p>Programming: <small><strong>I've been programming since I was 8 years old working with Qbasic. I program in my free time on and off mostly working on small projects to entertain myself.</strong></small></p>
                     <p>Video Games: <small><strong>Being 29 I fit in the perfect age group for this to be a primary hobby of mine albeit not very constructive. I enjoyed video games and programming so much that I earned an associates degree in Simulation and Game Design. My primary focus was artificial intelligence.</strong></small></p>
                 </div>

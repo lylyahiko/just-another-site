@@ -98,7 +98,7 @@ html, body {
     clear:both;
 }
 
-[class*='col-'] {
+[class*='cul-'] {
     float: left; 
     min-height: 1px; 
     width: 16.66%; 
@@ -106,15 +106,15 @@ html, body {
     padding: 12px; 
 }
 
-.col-1{ width: 16.66%; }
-.col-2{ width: 30%; }
-.col-3{ width: 46%;    }
-.col-4{ width: 66.66%; }
-.col-5{ width: 83.33%; }
-.col-6{ width: 100%;   }
+.cul-1{ width: 16.66%; }
+.cul-2{ width: 30%; }
+.cul-3{ width: 46%;    }
+.cul-4{ width: 66.66%; }
+.cul-5{ width: 83.33%; }
+.cul-6{ width: 100%;   }
 
 /*-- some extra column content styling --*/
-[class*='col-'] > p {
+[class*='cul-'] > p {
  padding: 0;
  margin: 0;
  text-align: center; 
