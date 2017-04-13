@@ -22,3 +22,5 @@ Route::get('/about', function () {
 Auth::routes();
 
 Route::get('/home', 'DashboardController@index');
+
+Route::get('/problems', 'ProblemController@index');
