@@ -23,4 +23,13 @@ Auth::routes();
 
 Route::get('/home', 'DashboardController@index');
 
-Route::get('/problems', 'ProblemController@index');
+// Route::get('/problems', 'ProblemController@index');
+
+Route::get('problems', 
+  ['as' => 'problems', 'uses' => 'ProblemController@index']);
+Route::get('create-problem', 
+  ['as' => 'create-problem', 'uses' => 'ProblemController@addView']);
+Route::post('create-problem', 
+  ['as' => 'store-problem', 'uses' => 'ProblemController@add']);
+Route::delete('delete-problem', 
+  ['as' => 'delete-problem', 'uses' => 'ProblemController@delete']);
