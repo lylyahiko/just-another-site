@@ -312,7 +312,6 @@ class ComposerStaticInitb53a595edbbafd4f9db9e4de22b43f5b
         'Collective\\Html\\HtmlServiceProvider' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlServiceProvider.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateProblemsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_13_175447_create-problems-table.php',
-        'CreateSessionsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_18_150629_create_sessions_table.php',
         'CreateUserProblemsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_13_175706_create-user-problems-table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',

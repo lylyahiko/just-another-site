@@ -40,7 +40,6 @@ return array(
     'Collective\\Html\\HtmlServiceProvider' => $vendorDir . '/laravelcollective/html/src/HtmlServiceProvider.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateProblemsTable' => $baseDir . '/database/migrations/2017_04_13_175447_create-problems-table.php',
-    'CreateSessionsTable' => $baseDir . '/database/migrations/2017_04_18_150629_create_sessions_table.php',
     'CreateUserProblemsTable' => $baseDir . '/database/migrations/2017_04_13_175706_create-user-problems-table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'Cron\\AbstractField' => $vendorDir . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
