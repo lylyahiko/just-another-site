@@ -21,12 +21,12 @@
                             <td>{{ $problem->id }}</td>
                             <td>{{ $problem->description }}</td> 
                             <td>
-                          {!! Form::open(array('method'  => 'delete', 'route' => 'delete-problem', 'class' => 'form')) !!}
-                                <input type="hidden" name="id" value="{{ $problem->id }}">
-                                    {!! Form::submit('Delete', 
-                                      array()) !!}
-                                    {!! Form::close() !!}
-                                    </td>
+                                {!! Form::open(array('method'  => 'delete', 'route' => 'delete-problem', 'class' => 'form')) !!}
+                                    <input type="hidden" name="id" value="{{ $problem->id }}">
+                                        {!! Form::submit('Delete') !!}
+                                {!! Form::close() !!}
+                                <button type="button" onclick="location.href='{{ route('update-problem-view', $problem->id) }}'">Update</button>
+                            </td>
                           </tr>
                       @endforeach
                     </table>

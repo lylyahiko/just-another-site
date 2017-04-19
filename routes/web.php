@@ -23,13 +23,22 @@ Auth::routes();
 
 Route::get('/home', 'DashboardController@index');
 
-// Route::get('/problems', 'ProblemController@index');
-
+// Generic problems route
 Route::get('problems', 
   ['as' => 'problems', 'uses' => 'ProblemController@index']);
+
+// Routes for creating problems
 Route::get('create-problem', 
   ['as' => 'create-problem', 'uses' => 'ProblemController@addView']);
 Route::post('create-problem', 
   ['as' => 'store-problem', 'uses' => 'ProblemController@add']);
+
+// Route for deleting problems
 Route::delete('delete-problem', 
   ['as' => 'delete-problem', 'uses' => 'ProblemController@delete']);
+
+// Routes for updating problems
+Route::get('update-problem', 
+  ['as' => 'update-problem-view', 'uses' => 'ProblemController@updateView']);
+Route::post('update-problem', 
+  ['as' => 'update-problem', 'uses' => 'ProblemController@update']);

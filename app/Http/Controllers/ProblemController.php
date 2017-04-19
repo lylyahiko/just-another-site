@@ -31,8 +31,6 @@ class ProblemController extends Controller
     {
         $problems = Problem::all();
 
-        // Session::flash('message', 'This is a message!');
-        // Session::flash('alert-class', 'alert-success');
         return View::make('pages.problems', compact('problems'));
     }
 
@@ -71,6 +69,41 @@ class ProblemController extends Controller
     {
         Problem::destroy($request->id);
         Session::flash('message', 'Problem Deleted!');
+        Session::flash('alert-class', 'alert-success');
+
+        return redirect()->route('problems');
+    }
+
+    /**
+     * View for updating problems.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function updateView(Request $request)
+    {
+        preg_match('/\?(\d.)/', $request->fullUrl(), $id);
+        
+        if (!isset($id[1])) {
+            Session::flash('message', 'Unable to find proper ID!');
+            Session::flash('alert-class', 'alert-alert');
+            return back();
+        }
+
+        $problem = Problem::find($id[1]);
+        return View::make('pages.update-problem', compact('problem'));
+    }
+
+    /**
+     * Does actual update of problems.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request)
+    {
+        $problem = Problem::find($request->id);
+        $problem->description = $request->description;
+        $problem->save();
+        Session::flash('message', 'Problem Updated!');
         Session::flash('alert-class', 'alert-success');
 
         return redirect()->route('problems');
