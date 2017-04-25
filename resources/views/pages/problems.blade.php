@@ -19,13 +19,17 @@
                       @foreach ($problems as $problem)
                           <tr>                               
                             <td>{{ $problem->id }}</td>
-                            <td>{{ $problem->description }}</td> 
+                            <td onclick="location.href = '{{ route('view-problem', $problem->id) }}'">{{ $problem->title }}</td> 
                             <td>
                                 {!! Form::open(array('method'  => 'delete', 'route' => 'delete-problem', 'class' => 'form')) !!}
-                                    <input type="hidden" name="id" value="{{ $problem->id }}">
-                                        {!! Form::submit('Delete') !!}
+                                <?php if ( $user->hasRole('delete-problem') ) { ?>
+                                        <input type="hidden" name="id" value="{{ $problem->id }}">
+                                            {!! Form::submit('Delete', array('class'=>'btn btn-danger')) !!}
+                                <?php } ?>
+                                <?php if ( $user->hasRole('update-problem') ) { ?>
+                                    <button type="button" class="btn btn-default" onclick="location.href='{{ route('update-problem-view', $problem->id) }}'">Update</button>
+                                <?php } ?>
                                 {!! Form::close() !!}
-                                <button type="button" onclick="location.href='{{ route('update-problem-view', $problem->id) }}'">Update</button>
                             </td>
                           </tr>
                       @endforeach
@@ -36,7 +40,7 @@
             </div>
             <br>
             <div>
-                <button onclick="window.location.href='/create-problem'">Create a Problem</button>
+                <button class="btn btn-default" onclick="window.location.href='/create-problem'">Create a Problem</button>
             </div>
             </section>
         </div>

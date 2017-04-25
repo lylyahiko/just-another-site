@@ -13,3 +13,7 @@ th, td {
     text-align: left;
     padding: 8px;
 }
+
+.btn {
+	display: inline-block !important;
+}

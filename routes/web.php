@@ -27,6 +27,10 @@ Route::get('/home', 'DashboardController@index');
 Route::get('problems', 
   ['as' => 'problems', 'uses' => 'ProblemController@index']);
 
+// Route for viewing problems
+Route::get('view-problem', 
+  ['as' => 'view-problem', 'uses' => 'ProblemController@viewProblem']);
+
 // Routes for creating problems
 Route::get('create-problem', 
   ['as' => 'create-problem', 'uses' => 'ProblemController@addView']);

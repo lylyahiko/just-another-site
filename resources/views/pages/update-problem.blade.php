@@ -10,6 +10,14 @@
             <div>
            {!! Form::open(array('route' => 'update-problem', 'class' => 'form')) !!}
 
+           <div class="form-group"> 
+                {!! Form::label('Title') !!}
+                {!! Form::text('title', null, 
+                    array('required', 
+                          'class'=>'form-control', 
+                          'placeholder'=>'Title')) !!}
+            </div>
+            
             <div class="form-group">
                 {!! Form::label('Description') !!}
                 {!! Form::textarea('description', $problem->description, 
@@ -21,7 +29,8 @@
 
 
             <div class="form-group">
-                {!! Form::submit('Update Problem!') !!}
+                {!! Form::submit('Update Problem!',
+                array('class'=>'btn btn-primary')) !!} <button type="button" class="btn btn-default" onclick="location.href='{{ URL::previous() }}'">Back</button>
             </div>
             {!! Form::close() !!}
             </div>
